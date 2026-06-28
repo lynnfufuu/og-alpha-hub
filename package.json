@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build"
-},
-
+    "dev": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "alchemy-sdk": "^3.6.5",
@@ -19,6 +18,7 @@
     "express-rate-limit": "^8.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "telegraf": "^4.16.3",
     "type-fest": "^5.7.0"
   },
   "devDependencies": {
