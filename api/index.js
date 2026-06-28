@@ -135,7 +135,4 @@ app.get('/api/jeet-score/:address', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, '127.0.0.1', () => {
-  console.log(`[CORE] Live Floor Oracle Engines Connected on Port ${PORT}`);
-export default app;});
+export default app;}
