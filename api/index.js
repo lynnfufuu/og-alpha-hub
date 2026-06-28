@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ALCHEMY_KEY = "GdyLJEnD32XleedrV2tVM";
+const ALCHEMY_KEY = process.env.ALCHEMY_KEY;
 const BASE_URL = `https://eth-mainnet.g.alchemy.com/nft/v3/${ALCHEMY_KEY}`;
 const CORE_URL = `https://eth-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`;
 
@@ -138,4 +138,4 @@ app.get('/api/jeet-score/:address', async (req, res) => {
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, '127.0.0.1', () => {
   console.log(`[CORE] Live Floor Oracle Engines Connected on Port ${PORT}`);
-});
+export default app;});
